@@ -1,0 +1,14 @@
+#pragma config(Motor,  port2,           motor1,     tmotorVex393, openLoop)
+#pragma config(Motor,  port3,           motor2,     tmotorVex393, openLoop)
+#pragma config(Motor,  port4,           motor3,      tmotorVex393, openLoop)
+#pragma config(Motor,  port5,           motor4,    tmotorVex393, openLoop)
+
+task main(){
+while(true){
+motor[motor1]=(vex
+motor[motor2]
+motor[motor3]
+motor[motor4]
+
+}
+}
