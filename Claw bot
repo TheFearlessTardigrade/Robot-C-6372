@@ -1,0 +1,16 @@
+//control the claw robot with just the two buttons.
+
+#pragma config(Motor,  port2,           leftMotor,     tmotorVex393, openLoop)
+#pragma config(Motor,  port3,           clawMotor,     tmotorVex269, openLoop)
+#pragma config(Motor,  port4,           armMotor,      tmotorVex393, openLoop)
+#pragma config(Motor,  port5,          rightMotor,    tmotorVex393, openLoop)
+task main ()
+{
+
+	while(1 == 1)
+	{
+		motor[leftMotor]  = (vexRT[Ch2] + vexRT[Ch1])/2;  // (y + x)/2
+		motor[rightMotor] = (vexRT[Ch2] - vexRT[Ch1])/2;  // (y - x)/2
+    motor[clawmotor] = vexRT[Ch4]
+    motor[arm motor] = vexRT[ch3]
+
