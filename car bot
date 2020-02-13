@@ -1,3 +1,4 @@
+//drives a simple car with four wheels and a motor for each wheel.
 #pragma config(Motor, port2, frontleft, tmotorVex393, openLoop)
 #pragma config(Motor, port3, frontright, tmotorVex393, openLoop)
 #pragma config(Motor, port4, backleft, tmotorVex393, openLoop)
@@ -9,12 +10,6 @@ motor[frontleft]  = (vexRT[Ch2] + vexRT[Ch1])/2;
 motor[frontright] = (vexRT[Ch2] + vexRT[Ch1])/2; 
 motor[backleft]  = (vexRT[Ch2] - vexRT[Ch1])/2;  
 motor[backright] = (vexRT[Ch2] - vexRT[Ch1])/2; 
-  if(vexRT[Btn5U] == 1){   
-    motor[frontleft] = 127;
-  }
-  if(vexRT[Btn6U] == 1){   
-    motor[frontright] = 127;
-  }
-
+  
 }
 }
