@@ -1,4 +1,4 @@
-//control the claw robot with just the two buttons.
+//control the claw robot with just the two xBox control sticks. Use one joystick to drive, and the other to operate the claw and arm.
 
 #pragma config(Motor,  port2,           leftMotor,     tmotorVex393, openLoop)
 #pragma config(Motor,  port3,           clawMotor,     tmotorVex269, openLoop)
