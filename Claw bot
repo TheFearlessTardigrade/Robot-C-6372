@@ -1,16 +1,16 @@
 //control the claw robot with just the two xBox control sticks. Use one joystick to drive, and the other to operate the claw and arm.
-
+//Super simple and effective code. Amazing to drive the robot with.
 #pragma config(Motor,  port2,           leftMotor,     tmotorVex393, openLoop)
 #pragma config(Motor,  port3,           clawMotor,     tmotorVex269, openLoop)
 #pragma config(Motor,  port4,           armMotor,      tmotorVex393, openLoop)
 #pragma config(Motor,  port5,          rightMotor,    tmotorVex393, openLoop)
 task main ()
 {
-
 	while(1 == 1)
 	{
-		motor[leftMotor]  = (vexRT[Ch1] - vexRT[Ch2])/2;  // (y + x)/2
-		motor[rightMotor] = (vexRT[Ch1] + vexRT[Ch2])/2;  // (y - x)/2
+		motor[leftMotor]  = (vexRT[Ch1] - vexRT[Ch2])/2;  
+		motor[rightMotor] = (vexRT[Ch1] + vexRT[Ch2])/2;  
     motor[clawmotor] = vexRT[Ch4]
-    motor[arm motor] = vexRT[ch3]
-
+    motor[arm motor] = vexRT[Ch3]
+}
+}
