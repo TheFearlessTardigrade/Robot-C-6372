@@ -9,8 +9,8 @@ task main ()
 
 	while(1 == 1)
 	{
-		motor[leftMotor]  = (vexRT[Ch2] + vexRT[Ch1])/2;  // (y + x)/2
-		motor[rightMotor] = (vexRT[Ch2] - vexRT[Ch1])/2;  // (y - x)/2
+		motor[leftMotor]  = (vexRT[Ch1] - vexRT[Ch2])/2;  // (y + x)/2
+		motor[rightMotor] = (vexRT[Ch1] + vexRT[Ch2])/2;  // (y - x)/2
     motor[clawmotor] = vexRT[Ch4]
     motor[arm motor] = vexRT[ch3]
 
