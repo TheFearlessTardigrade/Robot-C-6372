@@ -9,13 +9,11 @@ task main ()
 
 	while(true)
 	{
-		motor[rightMotor]  = -((vexRT[Ch2]) + (vexRT[Ch1]))/2;
-		motor[leftMotor] = ((vexRT[Ch1]) - (vexRT[Ch2])/2);
+		motor[rightMotor]  = -((vexRT[Ch2]) - (vexRT[Ch1]))/2;
+		motor[leftMotor] = ((vexRT[Ch1]) + (vexRT[Ch2])/2);
 		motor[armMotor] = (vexRT[Ch3]);
 		motor[clawMotor] = (vexRT[Ch4]);
 		
 		
 	}
 	}
-
-		
