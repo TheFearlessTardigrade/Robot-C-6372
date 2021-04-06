@@ -3,12 +3,21 @@
 #pragma config(Motor,  port4,           rightWheel,      tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port5,           lefttWheel,    tmotorVex393_MC29, openLoop)
 
-task main(){
+void robotDrive(int 127){
 while(true){
     //drive train, robot movement control
-    motor[rightMotor]  = -((vexRT[Ch2]) - (vexRT[Ch1]))/2;
-		motor[leftMotor] = ((vexRT[Ch1]) + (vexRT[Ch2])/2);
+    	motor[rightMotor]  = -((vexRT[Ch2]) - (vexRT[Ch1]))/2;
+	motor[leftMotor] = ((vexRT[Ch1]) + (vexRT[Ch2])/2);
 }
-//ping pong ball launcher
+}
 
+task main(){
+//calls the drive train function
+robotDrive();
+
+//ping pong ball launcher
+while(true){
+
+
+}
 }
