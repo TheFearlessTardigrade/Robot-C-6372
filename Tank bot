@@ -3,6 +3,11 @@
 #pragma config(Motor,  port4,           rightWheel,      tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port5,           lefttWheel,    tmotorVex393_MC29, openLoop)
 
+int varA = 0;
+int varB = 0;
+int varX = 0;
+int varY = 0;
+boolean
 void robotDrive(int 127){
 while(true){
     //drive train, robot movement control
