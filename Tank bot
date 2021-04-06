@@ -7,7 +7,27 @@ int varA = 0;
 int varB = 0;
 int varX = 0;
 int varY = 0;
-boolean
+bool iai;
+
+if(vexRT[A] == 1){
+	varA += 1;
+	}
+if(vexRT[B] == 1){
+	varB += 1;
+	}
+if(vexRT[X] == 1){
+	varX += 1;
+	}
+if(vexRT[Y] == 1){
+	varY +=1;
+	}
+if(varA == 3 && varB == 5 && varX == 2 && varY == 7){
+	iai == true;
+}
+if(varA != 3 && varB != 5 && varX != 2 && varY != 7){
+	iai == false;
+}
+
 void robotDrive(int 127){
 while(true){
     //drive train, robot movement control
@@ -16,13 +36,16 @@ while(true){
 }
 }
 
-task main(){
-//calls the drive train function
-robotDrive();
-
-//ping pong ball launcher
-while(true){
-
-
+void wheelDrive(){
+while(iai){
+if(vexRT[5U] == 1){
+	motor[rightWheel] = 127;
+	motor[leftWheel] = 127;
 }
+}
+}
+
+task main(){
+robotDrive();
+wheelDrive();
 }
