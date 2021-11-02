@@ -73,19 +73,7 @@ while(vexRT[Btn7L]==1){
 	}
 		
 
-
-
-
-
-
-
-
-
 }
 }
-	//Wheels
-
-motor[rightDrive]  = -((vexRT[Ch2]) - (vexRT[Ch1]))/2;
-		motor[leftDrive] = ((vexRT[Ch1]) + (vexRT[Ch2])/2);
-		
+	
 		
