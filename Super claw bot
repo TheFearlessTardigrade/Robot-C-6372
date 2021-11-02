@@ -9,8 +9,8 @@
 task main(){
 	while(true){
 		
-	motor[LeftDrive] = Ch3;
-	motor[RightDrive] = Ch2;
+	motor[LeftDrive] = vexRT[Ch3];
+	motor[RightDrive] = vexRT[Ch2];
 
 	//higherarmmotor
 while(vexRT[Btn8U]==1){
