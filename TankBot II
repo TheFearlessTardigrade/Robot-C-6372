@@ -1,0 +1,58 @@
+/* port 2: rightMotor
+port 2: leftMotor
+port 3: spinMotor
+port 4: liftMotor
+port 5: rightDrive
+port 6: leftDrive
+port 7: rDrive
+port 8: lDrive
+*\
+
+
+void spin(){
+wait1Msec(1);
+if(vexRT[Btn5U]==1){
+motor[spinMotor]=100;
+} else if(vexRT[Btn5D]==1){
+motor[spinMotor]=-50;
+} else motor[spinMotor]=0;
+}
+
+void wheel(){
+wait1Msec(1);
+if(vexRT[Btn6U]==1){
+motor[rightMotor]=127;
+} else if(vexRT[Btn6D]==1){
+motor[rightMotor]=-127;
+} else motor[rightMotor]=0;
+
+if(vexRT[Btn6U]==1){
+motor[leftMotor]=127;
+} else if(vexRT[Btn6D]==1){
+motor[leftMotor]=-127;
+} else motor[leftMotor]=0;
+}
+
+void lift(){
+wait1Msec(1);
+if(vexRT[Btn8U]==1){
+motor[liftMotor]=50;
+} else if(vexRT[Btn8D]==1){
+motor[liftMotor]=-50;
+} else motor[liftMotor]=0;
+}
+
+task main(){
+while(true){
+spin();
+wheel();
+lift();
+
+motor[rightDrive] = (vexRT[Ch2]);
+motor[rDrive] = (vexRT[Ch2]);
+motor[leftDrive] = (vexRT[Ch3]);
+motor[lDrive] = (vexRT[Ch3]);
+
+
+}
+}
